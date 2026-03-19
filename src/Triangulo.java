@@ -1,4 +1,4 @@
-public class Triangulo {
+public class Triangulo extends Figura{
 
     private double base;
     private double altura;
@@ -14,14 +14,17 @@ public class Triangulo {
         this.setLado3(l3);
     }
 
+    @Override
     public double calcularArea() {
         return (getBase() * getAltura()) / 2;
     }
 
+    @Override
     public double calcularPerimetro() {
         return getLado1() + getLado2() + getLado3();
     }
 
+    @Override
     public void dibujar() {
         System.out.println("Dibujando triangulo");
     }

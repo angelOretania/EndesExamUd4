@@ -1,4 +1,4 @@
-public class Rectangulo {
+public class Rectangulo extends Figura {
 
     private double ancho;
     private double alto;
@@ -8,14 +8,17 @@ public class Rectangulo {
         this.setAlto(alto);
     }
 
+    @Override
     public double calcularArea() {
         return getAncho() * getAlto();
     }
 
+    @Override
     public double calcularPerimetro() {
         return 2 * getAncho() + 2 * getAlto();
     }
 
+    @Override
     public void dibujar() {
         System.out.println("Dibujando rectangulo " + getAncho() + "x" + getAlto());
     }
