@@ -1,34 +1,36 @@
+package com.figuras.servicio;
+
+import com.figuras.modelo.Circulo;
+import com.figuras.modelo.Rectangulo;
+import com.figuras.modelo.Triangulo;
+
 import java.util.ArrayList;
 
 public class GestorFiguras {
 
-    public ArrayList<Object> figuras;
+    private ArrayList<Object> figuras;
 
     public GestorFiguras() {
-        figuras = new ArrayList<>();
+        setFiguras(new ArrayList<>());
     }
 
     public void agregarFigura(Object f) {
-        figuras.add(f);
+        getFiguras().add(f);
     }
 
     public void mostrarAreas() {
 
-        for (Object f : figuras) {
+        for (Object f : getFiguras()) {
 
-            // horrible uso de instanceof
-            if (f instanceof Circulo) {
-                Circulo c = (Circulo) f;
+            if (f instanceof Circulo c) {
                 System.out.println("Area circulo: " + c.calcularArea());
             }
 
-            if (f instanceof Rectangulo) {
-                Rectangulo r = (Rectangulo) f;
+            if (f instanceof Rectangulo r) {
                 System.out.println("Area rectangulo: " + r.calcularArea());
             }
 
-            if (f instanceof Triangulo) {
-                Triangulo t = (Triangulo) f;
+            if (f instanceof Triangulo t) {
                 System.out.println("Area triangulo: " + t.calcularArea());
             }
         }
@@ -36,20 +38,17 @@ public class GestorFiguras {
 
     public void mostrarPerimetros() {
 
-        for (Object f : figuras) {
+        for (Object f : getFiguras()) {
 
-            if (f instanceof Circulo) {
-                Circulo c = (Circulo) f;
+            if (f instanceof Circulo c) {
                 System.out.println("Perimetro circulo: " + c.calcularPerimetro());
             }
 
-            if (f instanceof Rectangulo) {
-                Rectangulo r = (Rectangulo) f;
+            if (f instanceof Rectangulo r) {
                 System.out.println("Perimetro rectangulo: " + r.calcularPerimetro());
             }
 
-            if (f instanceof Triangulo) {
-                Triangulo t = (Triangulo) f;
+            if (f instanceof Triangulo t) {
                 System.out.println("Perimetro triangulo: " + t.calcularPerimetro());
             }
         }
@@ -57,7 +56,7 @@ public class GestorFiguras {
 
     public void dibujarTodo() {
 
-        for (Object f : figuras) {
+        for (Object f : getFiguras()) {
 
             if (f instanceof Circulo) {
                 ((Circulo) f).dibujar();
@@ -71,5 +70,13 @@ public class GestorFiguras {
                 ((Triangulo) f).dibujar();
             }
         }
+    }
+
+    public ArrayList<Object> getFiguras() {
+        return figuras;
+    }
+
+    public void setFiguras(ArrayList<Object> figuras) {
+        this.figuras = figuras;
     }
 }
