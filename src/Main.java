@@ -4,13 +4,13 @@ public class Main {
 
         GestorFiguras gestor = new GestorFiguras();
 
-        Circulo c = new Circulo(5);
-        Rectangulo r = new Rectangulo(4, 6);
-        Triangulo t = new Triangulo(3, 4, 3, 4, 5);
+        Circulo circulo = new Circulo(5);
+        Rectangulo rectangulo = new Rectangulo(4, 6);
+        Triangulo triangulo = new Triangulo(3, 4, 3, 4, 5);
 
-        gestor.agregarFigura(c);
-        gestor.agregarFigura(r);
-        gestor.agregarFigura(t);
+        gestor.agregarFigura(circulo);
+        gestor.agregarFigura(rectangulo);
+        gestor.agregarFigura(triangulo);
 
         System.out.println("---- AREAS ----");
         gestor.mostrarAreas();

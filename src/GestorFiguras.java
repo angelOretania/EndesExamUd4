@@ -17,18 +17,15 @@ public class GestorFiguras {
         for (Object f : getFiguras()) {
 
             // horrible uso de instanceof
-            if (f instanceof Circulo) {
-                Circulo c = (Circulo) f;
+            if (f instanceof Circulo c) {
                 System.out.println("Area circulo: " + c.calcularArea());
             }
 
-            if (f instanceof Rectangulo) {
-                Rectangulo r = (Rectangulo) f;
+            if (f instanceof Rectangulo r) {
                 System.out.println("Area rectangulo: " + r.calcularArea());
             }
 
-            if (f instanceof Triangulo) {
-                Triangulo t = (Triangulo) f;
+            if (f instanceof Triangulo t) {
                 System.out.println("Area triangulo: " + t.calcularArea());
             }
         }
@@ -38,18 +35,15 @@ public class GestorFiguras {
 
         for (Object f : getFiguras()) {
 
-            if (f instanceof Circulo) {
-                Circulo c = (Circulo) f;
+            if (f instanceof Circulo c) {
                 System.out.println("Perimetro circulo: " + c.calcularPerimetro());
             }
 
-            if (f instanceof Rectangulo) {
-                Rectangulo r = (Rectangulo) f;
+            if (f instanceof Rectangulo r) {
                 System.out.println("Perimetro rectangulo: " + r.calcularPerimetro());
             }
 
-            if (f instanceof Triangulo) {
-                Triangulo t = (Triangulo) f;
+            if (f instanceof Triangulo t) {
                 System.out.println("Perimetro triangulo: " + t.calcularPerimetro());
             }
         }
