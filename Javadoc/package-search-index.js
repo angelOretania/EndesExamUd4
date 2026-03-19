@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.figuras"},{"l":"com.figuras.modelo"},{"l":"com.figuras.servicio"}];updateSearchResults();
