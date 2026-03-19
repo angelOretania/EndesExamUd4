@@ -1,3 +1,10 @@
+package com.figuras;
+
+import com.figuras.modelo.Circulo;
+import com.figuras.modelo.Rectangulo;
+import com.figuras.modelo.Triangulo;
+import com.figuras.servicio.GestorFiguras;
+
 public class Main {
 
     public static void main(String[] args) {

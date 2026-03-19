@@ -1,3 +1,5 @@
+package com.figuras.modelo;
+
 public interface TipoFigura {
     double calcularArea();
 

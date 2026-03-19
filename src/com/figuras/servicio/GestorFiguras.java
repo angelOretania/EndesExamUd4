@@ -1,3 +1,9 @@
+package com.figuras.servicio;
+
+import com.figuras.modelo.Circulo;
+import com.figuras.modelo.Rectangulo;
+import com.figuras.modelo.Triangulo;
+
 import java.util.ArrayList;
 
 public class GestorFiguras {
@@ -16,7 +22,6 @@ public class GestorFiguras {
 
         for (Object f : getFiguras()) {
 
-            // horrible uso de instanceof
             if (f instanceof Circulo c) {
                 System.out.println("Area circulo: " + c.calcularArea());
             }

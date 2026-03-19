@@ -1,3 +1,5 @@
+package com.figuras.modelo;
+
 public class Circulo extends Figura {
 
     public static final double PI = 3.1416;
