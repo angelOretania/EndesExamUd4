@@ -6,6 +6,10 @@ import com.figuras.modelo.Triangulo;
 
 import java.util.ArrayList;
 
+/**
+ * El servicio GestorFiguras crea una lista de objetos.
+ * Accede a ellos mediante un Getter e imprime el resultado adecuado para cada uno de ellos
+ */
 public class GestorFiguras {
 
     private ArrayList<Object> figuras;

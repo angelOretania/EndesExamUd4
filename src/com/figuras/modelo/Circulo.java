@@ -1,5 +1,10 @@
 package com.figuras.modelo;
 
+/**
+ * Círculo es una subclase de figura
+ * Sobreescribe los métodos de la interfaz TipoFigura
+ * para definir el comportamiento de este objeto.
+ */
 public class Circulo extends Figura {
 
     public static final double PI = 3.1416;
